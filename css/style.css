@@ -5,6 +5,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'autumnchant';
+  src: url("../fonts/autumn-chant/Autumn\ Chant.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'love';
+  src: url("../fonts/about-love/AboutLove.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -18,6 +30,7 @@ body {
   color: #828282;
   background: #fff;
 }
+
 
 #page {
   position: relative;
@@ -98,12 +111,15 @@ h1, h2, h3, h4, h5, h6, figure {
     padding: 20px 0;
   }
 }
+.h{
+  font-family: "autumnchant", Arial, serif;
+}
 .fh5co-nav #fh5co-logo {
   font-size: 40px;
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "autumnchant", Arial, serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -309,7 +325,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -1014,6 +1030,37 @@ form label {
   .fh5co-section {
     padding: 3em 0;
   }
+  #fh5co-couple{
+    background-color:#f7f7f7;
+    background-image: none;
+  }
+  .simply-countdown > .simply-section {
+    /* coutndown blocks */
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: rgba(23, 120, 211, 0.555);
+    margin: 0 4px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    animation: pulse 1s ease infinite;
+  }
+  .simply-amount{
+    font-size: small;
+  }
+  .simply-word{
+    font-size: small;
+  }
+}
+
+#fh5co-couple{
+  background-image: url(../images/floral.jpeg);
+  background-repeat:no-repeat;
+  background-color:#f7f7f7;
+  padding: 40px;
 }
 
 .fh5co-section-gray {
@@ -1095,6 +1142,10 @@ form label {
     width: 120px;
     height: 120px;
     margin: 0 auto;
+  }
+  #fh5co-couple{
+    background-color:#f7f7f7;
+    background-image: none;
   }
 }
 .couple-half .groom {
@@ -1250,6 +1301,10 @@ form label {
   #fh5co-testimonial .wrap-testimony .testimony-slide blockquote {
     width: 100%;
   }
+  #fh5co-couple{
+    background-color:#f7f7f7;
+    background-image: none;
+  }
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide blockquote p {
   font-style: italic;
@@ -1401,6 +1456,9 @@ form label {
   #fh5co-footer .copyright .pull-right {
     float: none !important;
     text-align: center;
+  }
+  .newheading{
+    font-size: large;
   }
 }
 #fh5co-footer .copyright .block {
